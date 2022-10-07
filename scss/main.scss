@@ -1,0 +1,23 @@
+//abs_utils declarations
+@import "./abs_utils/variables";
+
+//base declarations
+@import "./base/reset";
+
+//components declarations
+@import "./components/logos";
+@import "./components/cards";
+@import "./components/buttons";
+
+//layout declarations
+@import "./layout/header";
+@import "./layout/navegation";
+@import "./layout/forms";
+@import "./layout/footer";
+
+//pages declarations
+@import "./pages/index";
+@import "./pages/products";
+@import "./pages/faq";
+@import "./pages/location";
+@import "./pages/about";
