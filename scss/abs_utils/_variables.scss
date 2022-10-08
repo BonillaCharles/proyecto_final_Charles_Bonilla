@@ -13,16 +13,16 @@ $hb-typography: Helvetica Neue, Helvetica, Arial, sans-serif;
 
 //Herbalife Nutrition Breakpoints
 //Smartphones
-$hb-sm-breakpoint: 320px;
-$hb-md-breakpoint: 480px;
+$hb-bottom-breakpoint: 320px;
+$hb-top-breakpoint: 478px;
 
 //Tablets
-$hb-tb-sm-breakpoint: 480px;
-$hb-tb-md-breakpoint: 768px;
+$hb-tb-bottom-breakpoint: 480px;
+$hb-tb-top-breakpoint: 768px;
 
 //Laptops
-$hb-lp-sm-breakpoint: 768px;
-$hb-lp-md-breakpoint: 1024px;
+$hb-lp-bottom-breakpoint: 780px;
+$hb-lp-top-breakpoint: 1022px;
 
 //Desktops
 $hb-dt-sm-breakpoint: 1024px;

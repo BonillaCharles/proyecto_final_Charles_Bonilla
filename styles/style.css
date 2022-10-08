@@ -66,4 +66,94 @@ footer {
   text-align: justify;
 }
 
+/* --global form button styling-- */
+.form-btn {
+  width: 96px;
+  height: 36px;
+  position: relative;
+  align-self: center;
+  border: none;
+  outline: none;
+  color: #fff;
+  background: rgb(103, 188, 42);
+  cursor: pointer;
+  z-index: 0;
+  border-radius: 12px;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.form-btn:before {
+  content: "";
+  background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 12px;
+}
+.form-btn:active {
+  color: #000;
+  font-weight: 800;
+}
+.form-btn:active:after {
+  background: transparent;
+}
+.form-btn:hover:before {
+  opacity: 1;
+}
+.form-btn:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgb(103, 188, 42);
+  left: 0;
+  top: 0;
+  border-radius: 12px;
+  z-index: -1;
+}
+
+@keyframes glowing {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+/* --form styling-- */
+.form {
+  width: 100%;
+  max-width: 360px;
+  background-color: rgb(199, 199, 199);
+  border: 2px solid rgb(77, 77, 77);
+  border-radius: 12px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 8px;
+}
+.form label {
+  width: 100%;
+  padding: 4px;
+}
+.form-input {
+  width: 100%;
+}
+.form-checkbox {
+  margin: 2px;
+}
+
 /*# sourceMappingURL=style.css.map */
