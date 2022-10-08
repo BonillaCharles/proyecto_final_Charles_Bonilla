@@ -1,0 +1,15 @@
+/* --Herbalife Nutrition global logo styling-- */
+.header-logo,
+.footer-logo {
+    width: 100%;
+    max-width: 320px;
+}
+
+.hero-logo {
+    display: block;
+    width: 80%;
+    max-width: 320px;
+    border: 6px solid $hb-hero-bd-img;
+    border-radius: 50%;
+    margin: 12px auto;
+}

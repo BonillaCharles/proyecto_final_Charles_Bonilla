@@ -1,4 +1,4 @@
-/*Global Reset*/
+/* --Global Reset-- */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -18,6 +18,52 @@ ol {
 a {
   text-decoration: none;
   color: #000;
+}
+
+/* --global styling-- */
+header,
+main,
+aside,
+footer {
+  padding: 8px;
+}
+
+/* --Herbalife Nutrition global logo styling-- */
+.header-logo,
+.footer-logo {
+  width: 100%;
+  max-width: 320px;
+}
+
+.hero-logo {
+  display: block;
+  width: 80%;
+  max-width: 320px;
+  border: 6px solid rgb(255, 255, 0);
+  border-radius: 50%;
+  margin: 12px auto;
+}
+
+/* --global card styling--*/
+.card {
+  width: 100%;
+  max-width: 320px;
+  height: 100%;
+  border: 6px solid rgb(77, 77, 77);
+  border-radius: 12px;
+  padding: 12px;
+}
+.card-title {
+  text-align: center;
+  text-transform: uppercase;
+}
+.card-img {
+  display: block;
+  width: 100%;
+  border-radius: 16px;
+}
+.card-text {
+  text-align: justify;
 }
 
 /*# sourceMappingURL=style.css.map */
