@@ -1,0 +1,12 @@
+/* --global header styling-- */
+.header {
+    background-color: $hb-light-green;
+
+    // display: flex;
+    // flex-flow: column nowrap;
+    &-title {
+        width: 100%;
+        max-width: $smp-max-width;
+        text-align: center;
+    }
+}

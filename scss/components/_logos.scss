@@ -2,13 +2,14 @@
 .header-logo,
 .footer-logo {
     width: 100%;
-    max-width: 320px;
+    max-width: $smp-max-width;
+    height: 100%;
 }
 
 .hero-logo {
     display: block;
     width: 80%;
-    max-width: 320px;
+    max-width: $smp-max-width;
     border: 6px solid $hb-hero-bd-img;
     border-radius: 50%;
     margin: 12px auto;

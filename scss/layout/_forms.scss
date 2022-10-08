@@ -1,7 +1,7 @@
-/* --form styling-- */
+/* --global form styling-- */
 .form {
     width: 100%;
-    max-width: 360px;
+    max-width: $smp-max-width;
     background-color: $hb-mid-gray;
     border: 2px solid $hb-dark-gray;
     border-radius: 12px;

@@ -5,25 +5,23 @@ $hb-light-gray: rgb(221, 221, 221); //#dddddd
 $hb-mid-gray: rgb(199, 199, 199); //#c7c7c7
 $hb-dark-gray: rgb(77, 77, 77); //#4d4d4d
 
-//Other color references
-$hb-hero-bd-img: rgb(255, 255, 0); //#ffff00
-
 //Herbalife Nutrition Typography Variable
 $hb-typography: Helvetica Neue, Helvetica, Arial, sans-serif;
+
+//Other references
+$hb-hero-bd-img: rgb(255, 255, 0); //#ffff00
+$smp-max-width: 460px;
 
 //Herbalife Nutrition Breakpoints
 //Smartphones
 $hb-bottom-breakpoint: 320px;
 $hb-top-breakpoint: 478px;
-
 //Tablets
 $hb-tb-bottom-breakpoint: 480px;
 $hb-tb-top-breakpoint: 768px;
-
 //Laptops
 $hb-lp-bottom-breakpoint: 780px;
 $hb-lp-top-breakpoint: 1022px;
-
 //Desktops
 $hb-dt-sm-breakpoint: 1024px;
 $hb-dt-md-breakpoint: 1200px;
