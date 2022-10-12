@@ -257,12 +257,72 @@ footer {
 }
 .products-title,
 .membership-title {
+  text-transform: uppercase;
   text-align: center;
+  padding: 6px;
 }
 .products .container,
 .membership .container {
   display: flex;
   flex-flow: column nowrap;
+  gap: 5px;
+}
+.products .container .card-list_item,
+.membership .container .card-list_item {
+  list-style-type: disc;
+  list-style-position: inside;
+}
+.products-disclosure,
+.membership-disclosure {
+  display: block;
+  text-align: justify;
+  text-transform: uppercase;
+  margin-top: 12px;
+  padding: 6px;
+}
+
+.preparation {
+  border-radius: 10px;
+}
+.preparation-title {
+  text-align: center;
+}
+.preparation .container {
+  display: flex;
+  flex-flow: column nowrap;
+}
+.preparation .container .preparation-list_item {
+  padding: 6px;
+}
+.preparation .container .ingredients-list {
+  list-style-type: disc;
+  padding: 3px;
+}
+
+/* --faq.html styling-- */
+.questions-title {
+  text-align: center;
+  text-transform: uppercase;
+}
+.questions .container {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 5px;
+}
+.questions .container .card-question {
+  text-align: center;
+  padding: 6px;
+}
+.questions .container .card-answer {
+  text-align: justify;
+  padding: 6px;
+}
+.questions .container .answer-list {
+  list-style-type: disc;
+  list-style-position: inside;
+}
+.questions .container .answer-list_item {
+  padding: 3px;
 }
 
 /*# sourceMappingURL=style.css.map */

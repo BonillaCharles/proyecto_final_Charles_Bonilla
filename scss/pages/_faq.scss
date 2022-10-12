@@ -1,0 +1,32 @@
+/* --faq.html styling-- */
+.questions {
+    &-title {
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    & .container {
+        display: flex;
+        flex-flow: column nowrap;
+        gap: 5px;
+
+        & .card-question {
+            text-align: center;
+            padding: 6px;
+        }
+
+        & .card-answer {
+            text-align: justify;
+            padding: 6px;
+        }
+
+        & .answer-list {
+            list-style-type: disc;
+            list-style-position: inside;
+
+            &_item {
+                padding: 3px;
+            }
+        }
+    }
+}

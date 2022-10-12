@@ -6,11 +6,49 @@
     margin: 24px auto;
 
     &-title {
+        text-transform: uppercase;
+        text-align: center;
+        padding: 6px;
+    }
+
+    & .container {
+        display: flex;
+        flex-flow: column nowrap;
+        gap: 5px;
+
+        & .card-list_item {
+            list-style-type: disc;
+            list-style-position: inside;
+        }
+    }
+
+    &-disclosure {
+        display: block;
+        text-align: justify;
+        text-transform: uppercase;
+        margin-top: 12px;
+        padding: 6px;
+    }
+}
+
+.preparation {
+    border-radius: 10px;
+
+    &-title {
         text-align: center;
     }
 
     & .container {
         display: flex;
         flex-flow: column nowrap;
+
+        & .preparation-list_item {
+            padding: 6px;
+        }
+
+        & .ingredients-list {
+            list-style-type: disc;
+            padding: 3px;
+        }
     }
 }
