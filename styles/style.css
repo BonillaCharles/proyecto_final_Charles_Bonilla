@@ -300,6 +300,9 @@ footer {
 }
 
 /* --faq.html styling-- */
+.questions {
+  margin-bottom: 12px;
+}
 .questions-title {
   text-align: center;
   text-transform: uppercase;
@@ -323,6 +326,53 @@ footer {
 }
 .questions .container .answer-list_item {
   padding: 3px;
+}
+
+.question-form {
+  margin-top: 12px;
+  padding: 12px;
+}
+.question-form .form-title {
+  text-align: center;
+  text-transform: uppercase;
+}
+.question-form .form-text {
+  text-align: justify;
+  padding: 12px;
+}
+
+/* --location.html styling-- */
+.location .location-title {
+  text-align: center;
+  text-transform: uppercase;
+}
+.location .container {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 2px;
+}
+.location .container .address {
+  display: flex;
+  flex-flow: column nowrap;
+  margin-bottom: 12px;
+}
+.location .map {
+  width: 100%;
+  box-shadow: 5px 5px 18px 0 #071f4d;
+}
+
+/* --about.html styling-- */
+.about-title {
+  text-align: center;
+  text-transform: uppercase;
+}
+.about .container {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 2px;
+}
+.about .container .card {
+  width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,5 +1,7 @@
 /* --faq.html styling-- */
 .questions {
+    margin-bottom: 12px;
+
     &-title {
         text-align: center;
         text-transform: uppercase;
@@ -28,5 +30,20 @@
                 padding: 3px;
             }
         }
+    }
+}
+
+.question-form {
+    margin-top: 12px;
+    padding: 12px;
+
+    & .form-title {
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    & .form-text {
+        text-align: justify;
+        padding: 12px;
     }
 }

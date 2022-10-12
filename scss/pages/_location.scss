@@ -1,0 +1,24 @@
+/* --location.html styling-- */
+.location {
+    & .location-title {
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    & .container {
+        display: flex;
+        flex-flow: column nowrap;
+        gap: 2px;
+
+        & .address {
+            display: flex;
+            flex-flow: column nowrap;
+            margin-bottom: 12px;
+        }
+    }
+
+    & .map {
+        width: 100%;
+        box-shadow: 5px 5px 18px 0 #071f4d;
+    }
+}
