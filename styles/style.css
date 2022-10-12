@@ -53,18 +53,22 @@ footer {
   border-radius: 12px;
   padding: 12px;
 }
+
 .card-title {
   text-align: center;
   text-transform: uppercase;
   padding: 6px;
 }
+
 .card-img {
   display: block;
   width: 100%;
   border-radius: 16px;
   padding: 6px;
 }
-.card-text, .card-list_item {
+
+.card-text,
+.card-list_item {
   text-align: justify;
   padding: 6px;
 }
@@ -86,6 +90,7 @@ footer {
   letter-spacing: 2px;
   text-transform: uppercase;
 }
+
 .form-btn:before {
   content: "";
   background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
@@ -102,16 +107,20 @@ footer {
   transition: opacity 0.3s ease-in-out;
   border-radius: 12px;
 }
+
 .form-btn:active {
   color: #000;
   font-weight: 800;
 }
+
 .form-btn:active:after {
   background: transparent;
 }
+
 .form-btn:hover:before {
   opacity: 1;
 }
+
 .form-btn:after {
   content: "";
   position: absolute;
@@ -128,21 +137,37 @@ footer {
   0% {
     background-position: 0 0;
   }
+
   50% {
     background-position: 400% 0;
   }
+
   100% {
     background-position: 0 0;
   }
 }
+
 /* --global header styling-- */
 .header {
   background-color: rgb(122, 193, 67);
 }
+
 .header-title {
   width: 100%;
   max-width: 460px;
   text-align: center;
+}
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  .header {
+    font-size: 0.5rem;
+  }
+}
+
+@media screen and (min-width: 780px) and (max-width: 1022px) {
+  .header {
+    font-size: 0.75rem;
+  }
 }
 
 /* --global navigation styling-- */
@@ -150,6 +175,7 @@ footer {
   width: 100%;
   max-width: 460px;
 }
+
 .navigation-menu {
   display: flex;
   flex-flow: row wrap;
@@ -157,10 +183,12 @@ footer {
   align-items: baseline;
   text-transform: uppercase;
 }
+
 .navigation-menu_item {
   padding: 4px;
   font-weight: 600;
 }
+
 .navigation a {
   color: rgb(77, 77, 77);
 }
@@ -178,13 +206,16 @@ footer {
   align-items: flex-start;
   padding: 8px;
 }
+
 .form label {
   width: 100%;
   padding: 4px;
 }
+
 .form-input {
   width: 100%;
 }
+
 .form-checkbox {
   margin: 2px;
 }
@@ -198,13 +229,16 @@ footer {
   justify-content: space-between;
   gap: 2px;
 }
+
 .footer-text {
   padding: 6px;
 }
+
 .footer .container {
   text-align: justify;
   border-bottom: 6px solid #000;
 }
+
 .footer .container a {
   color: rgb(103, 188, 42);
   font-weight: 800;
@@ -219,6 +253,7 @@ footer {
   text-align: center;
   padding: 4px;
 }
+
 .footer-legal a,
 .footer-social_media a {
   color: rgb(77, 77, 77);
@@ -235,6 +270,7 @@ footer {
   text-transform: uppercase;
   color: #fff;
 }
+
 .hero-text {
   text-align: justify;
 }
@@ -255,23 +291,27 @@ footer {
   border-radius: 10px;
   margin: 24px auto;
 }
+
 .products-title,
 .membership-title {
   text-transform: uppercase;
   text-align: center;
   padding: 6px;
 }
+
 .products .container,
 .membership .container {
   display: flex;
   flex-flow: column nowrap;
   gap: 5px;
 }
+
 .products .container .card-list_item,
 .membership .container .card-list_item {
   list-style-type: disc;
   list-style-position: inside;
 }
+
 .products-disclosure,
 .membership-disclosure {
   display: block;
@@ -284,16 +324,20 @@ footer {
 .preparation {
   border-radius: 10px;
 }
+
 .preparation-title {
   text-align: center;
 }
+
 .preparation .container {
   display: flex;
   flex-flow: column nowrap;
 }
+
 .preparation .container .preparation-list_item {
   padding: 6px;
 }
+
 .preparation .container .ingredients-list {
   list-style-type: disc;
   padding: 3px;
@@ -303,27 +347,33 @@ footer {
 .questions {
   margin-bottom: 12px;
 }
+
 .questions-title {
   text-align: center;
   text-transform: uppercase;
 }
+
 .questions .container {
   display: flex;
   flex-flow: column nowrap;
   gap: 5px;
 }
+
 .questions .container .card-question {
   text-align: center;
   padding: 6px;
 }
+
 .questions .container .card-answer {
   text-align: justify;
   padding: 6px;
 }
+
 .questions .container .answer-list {
   list-style-type: disc;
   list-style-position: inside;
 }
+
 .questions .container .answer-list_item {
   padding: 3px;
 }
@@ -332,10 +382,12 @@ footer {
   margin-top: 12px;
   padding: 12px;
 }
+
 .question-form .form-title {
   text-align: center;
   text-transform: uppercase;
 }
+
 .question-form .form-text {
   text-align: justify;
   padding: 12px;
@@ -346,16 +398,19 @@ footer {
   text-align: center;
   text-transform: uppercase;
 }
+
 .location .container {
   display: flex;
   flex-flow: column nowrap;
   gap: 2px;
 }
+
 .location .container .address {
   display: flex;
   flex-flow: column nowrap;
   margin-bottom: 12px;
 }
+
 .location .map {
   width: 100%;
   box-shadow: 5px 5px 18px 0 #071f4d;
@@ -366,11 +421,13 @@ footer {
   text-align: center;
   text-transform: uppercase;
 }
+
 .about .container {
   display: flex;
   flex-flow: column nowrap;
   gap: 2px;
 }
+
 .about .container .card {
   width: 100%;
 }

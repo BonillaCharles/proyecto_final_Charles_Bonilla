@@ -10,3 +10,17 @@
         text-align: center;
     }
 }
+
+@media screen and (min-width: $hb-tb-bottom-breakpoint) and (max-width: $hb-tb-top-breakpoint) {
+    .header {
+        font-size: 0.5rem;
+    }
+}
+
+@media screen and (min-width:$hb-lp-bottom-breakpoint) and (max-width:$hb-lp-top-breakpoint) {
+    .header {
+        font-size: 0.75rem;
+    }
+}
+
+@media screen and (min-width:$hb-dt-sm-breakpoint) {}
