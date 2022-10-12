@@ -1,0 +1,24 @@
+/* --index.html styling-- */
+.hero {
+    background-image: url("../images/hb_nutrition_wp_black_1547x1080.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+
+    &-text {
+        text-align: justify;
+    }
+}
+
+.main-title {
+    text-align: center;
+}
+
+.testimonials {
+    display: flex;
+    flex-flow: column nowrap;
+
+}

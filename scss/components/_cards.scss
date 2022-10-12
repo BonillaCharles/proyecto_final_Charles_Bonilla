@@ -10,15 +10,19 @@
     &-title {
         text-align: center;
         text-transform: uppercase;
+        padding: 6px;
     }
 
     &-img {
         display: block;
         width: 100%;
         border-radius: 16px;
+        padding: 6px;
     }
 
-    &-text {
+    &-text,
+    &-list_item {
         text-align: justify;
+        padding: 6px;
     }
 }

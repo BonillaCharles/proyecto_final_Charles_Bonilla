@@ -56,14 +56,17 @@ footer {
 .card-title {
   text-align: center;
   text-transform: uppercase;
+  padding: 6px;
 }
 .card-img {
   display: block;
   width: 100%;
   border-radius: 16px;
+  padding: 6px;
 }
-.card-text {
+.card-text, .card-list_item {
   text-align: justify;
+  padding: 6px;
 }
 
 /* --global form button styling-- */
@@ -220,6 +223,46 @@ footer {
 .footer-social_media a {
   color: rgb(77, 77, 77);
   font-weight: 600;
+}
+
+/* --index.html styling-- */
+.hero {
+  background-image: url("../images/hb_nutrition_wp_black_1547x1080.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+}
+.hero-text {
+  text-align: justify;
+}
+
+.main-title {
+  text-align: center;
+}
+
+.testimonials {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+/* --products.html styling-- */
+.products,
+.membership {
+  background-color: rgb(221, 221, 221);
+  border-radius: 10px;
+  margin: 24px auto;
+}
+.products-title,
+.membership-title {
+  text-align: center;
+}
+.products .container,
+.membership .container {
+  display: flex;
+  flex-flow: column nowrap;
 }
 
 /*# sourceMappingURL=style.css.map */
