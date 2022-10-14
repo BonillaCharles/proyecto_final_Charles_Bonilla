@@ -1,9 +1,8 @@
 /* --global header styling-- */
 .header {
+    width: 100%;
     background-color: $hb-light-green;
 
-    // display: flex;
-    // flex-flow: column nowrap;
     &-title {
         width: 100%;
         max-width: $smp-max-width;
@@ -13,7 +12,15 @@
 
 @media screen and (min-width: $hb-tb-bottom-breakpoint) and (max-width: $hb-tb-top-breakpoint) {
     .header {
-        font-size: 0.5rem;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: center;
+
+        & a,
+        &-title {
+            width: 48%;
+        }
     }
 }
 
