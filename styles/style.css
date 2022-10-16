@@ -88,7 +88,7 @@ footer {
 }
 .form-btn:before {
   content: "";
-  background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+  background: linear-gradient(45deg, #7ac143, #67bc2a, #dddddd, #c7c7c7, #4d4d4d, #7ac143);
   position: absolute;
   top: -2px;
   left: -2px;
@@ -153,13 +153,37 @@ footer {
     justify-content: space-between;
     align-items: center;
   }
-  .header a, .header-title {
-    width: 48%;
+  .header a {
+    width: 44%;
+    max-width: 320px;
+  }
+  .header-title {
+    width: 55%;
   }
 }
 @media screen and (min-width: 780px) and (max-width: 1022px) {
   .header {
-    font-size: 0.75rem;
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .header a {
+    width: 35%;
+    max-width: 280px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .header {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .header-title {
+    width: 50%;
   }
 }
 /* --global navigation styling-- */
@@ -208,11 +232,9 @@ footer {
 /* --global footer styling-- */
 .footer {
   background-color: rgb(199, 199, 199);
-  width: 99%;
+  width: 100%;
   display: flex;
   flex-flow: column nowrap;
-  justify-content: space-between;
-  gap: 2px;
 }
 .footer-text {
   padding: 6px;
@@ -241,6 +263,35 @@ footer {
   font-weight: 600;
 }
 
+@media screen and (min-width: 600px) and (max-width: 768px) {
+  .footer a {
+    width: 44%;
+    max-width: 320px;
+  }
+  .footer .container {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+  }
+  .footer-text {
+    width: 33%;
+  }
+}
+@media screen and (min-width: 780px) and (max-width: 1200px) {
+  .footer a {
+    width: 35%;
+    max-width: 280px;
+  }
+  .footer .container {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+  }
+  .footer-text {
+    width: 33%;
+    max-width: 280px;
+  }
+}
 /* --index.html styling-- */
 .hero {
   background-image: url("../images/hb_nutrition_wp_black_1547x1080.jpg");
@@ -262,8 +313,32 @@ footer {
 .testimonials {
   display: flex;
   flex-flow: column nowrap;
+  padding: 6px;
 }
 
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  .hero {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+  }
+  .hero .container {
+    width: 50%;
+    display: block;
+    margin: auto;
+  }
+  .testimonials .container {
+    display: flex;
+    flex-flow: row nowrap;
+    overflow-x: auto;
+    gap: 10px;
+    padding: 6px;
+  }
+  .testimonials .container .card {
+    min-width: 420px;
+    min-height: 180px;
+  }
+}
 /* --products.html styling-- */
 .products,
 .membership {

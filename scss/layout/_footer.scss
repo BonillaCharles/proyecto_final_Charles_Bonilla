@@ -1,11 +1,9 @@
 /* --global footer styling-- */
 .footer {
     background-color: $hb-mid-gray;
-    width: 99%;
+    width: 100%;
     display: flex;
     flex-flow: column nowrap;
-    justify-content: space-between;
-    gap: 2px;
 
     &-text {
         padding: 6px;
@@ -35,5 +33,45 @@
     & a {
         color: $hb-dark-gray;
         font-weight: 600;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: $hb-tb-top-breakpoint) {
+    .footer {
+        & a {
+            width: 44%;
+            max-width: 320px;
+        }
+
+        & .container {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-evenly;
+        }
+
+        &-text {
+            width: 33%;
+        }
+    }
+}
+
+@media screen and (min-width:$hb-lp-bottom-breakpoint) and (max-width:$hb-dt-md-breakpoint) {
+    .footer {
+
+        & a {
+            width: 35%;
+            max-width: 280px;
+        }
+
+        & .container {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+        }
+
+        &-text {
+            width: 33%;
+            max-width: 280px;
+        }
     }
 }
