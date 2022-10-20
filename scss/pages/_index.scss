@@ -24,30 +24,30 @@
 
 }
 
-@media screen and (min-width: $hb-tb-bottom-breakpoint) and (max-width: $hb-tb-top-breakpoint) {
+// @media screen and (min-width: $hb-tb-bottom-breakpoint) and (max-width: $hb-tb-top-breakpoint) {
 
-    .hero {
-        width: 100%;
-        display: flex;
-        flex-flow: row nowrap;
+//     .hero {
+//         width: 100%;
+//         display: flex;
+//         flex-flow: row nowrap;
 
-        & .container {
-            width: 50%;
-            display: block;
-            margin: auto;
-        }
-    }
+//         & .container {
+//             width: 50%;
+//             display: block;
+//             margin: auto;
+//         }
+//     }
 
-    .testimonials .container {
-        display: flex;
-        flex-flow: row nowrap;
-        overflow-x: auto;
-        gap: 10px;
-        padding: 6px;
+//     .testimonials .container {
+//         display: flex;
+//         flex-flow: row nowrap;
+//         overflow-x: auto;
+//         gap: 10px;
+//         padding: 6px;
 
-        & .card {
-            min-width: 420px;
-            min-height: 180px;
-        }
-    }
-}
+//         & .card {
+//             min-width: 420px;
+//             min-height: 180px;
+//         }
+//     }
+// }

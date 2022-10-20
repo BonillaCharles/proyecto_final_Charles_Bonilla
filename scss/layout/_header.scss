@@ -10,55 +10,55 @@
     }
 }
 
-@media screen and (min-width: $hb-tb-bottom-breakpoint) and (max-width: $hb-tb-top-breakpoint) {
-    .header {
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: space-between;
-        align-items: center;
+// @media screen and (min-width: $hb-tb-bottom-breakpoint) and (max-width: $hb-tb-top-breakpoint) {
+//     .header {
+//         display: flex;
+//         flex-flow: row wrap;
+//         justify-content: space-between;
+//         align-items: center;
 
-        & a {
-            width: 44%;
-            max-width: 320px;
-        }
+//         & a {
+//             width: 44%;
+//             max-width: 320px;
+//         }
 
-        &-title {
-            width: 55%;
-        }
-    }
-}
+//         &-title {
+//             width: 55%;
+//         }
+//     }
+// }
 
-@media screen and (min-width:$hb-lp-bottom-breakpoint) and (max-width:$hb-lp-top-breakpoint) {
-    .header {
-        position: sticky;
-        top: 0;
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: flex-start;
-        align-items: center;
-        gap: 5px;
+// @media screen and (min-width:$hb-lp-bottom-breakpoint) and (max-width:$hb-lp-top-breakpoint) {
+//     .header {
+//         position: sticky;
+//         top: 0;
+//         display: flex;
+//         flex-flow: row wrap;
+//         justify-content: flex-start;
+//         align-items: center;
+//         gap: 5px;
 
-        & a {
-            width: 24%;
-            max-width: 240px;
-        }
+//         & a {
+//             width: 24%;
+//             max-width: 240px;
+//         }
 
-        &-title {
-            width: 24%;
-            max-width: 240px;
-        }
-    }
-}
+//         &-title {
+//             width: 24%;
+//             max-width: 240px;
+//         }
+//     }
+// }
 
-@media screen and (min-width:$hb-dt-sm-breakpoint) {
-    .header {
-        position: sticky;
-        top: 0;
-        display: flex;
-        justify-content: space-evenly;
+// @media screen and (min-width:$hb-dt-sm-breakpoint) {
+//     .header {
+//         position: sticky;
+//         top: 0;
+//         display: flex;
+//         justify-content: space-evenly;
 
-        &-title {
-            width: 50%;
-        }
-    }
-}
+//         &-title {
+//             width: 50%;
+//         }
+//     }
+// }

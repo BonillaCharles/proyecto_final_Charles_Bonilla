@@ -12,13 +12,16 @@ $hb-typography: Helvetica Neue, Helvetica, Arial, sans-serif;
 $hb-hero-bd-img: rgb(255, 255, 0); //#ffff00
 
 //Herbalife Nutrition Breakpoints
+//Mobile
+$mobile-btm-bkp: 360px;
+$mobile-top-bkp: 760px;
 //Tablets
+$tablet-btm-bkp: 768px;
+$tablet-top-bkp: 1024px;
 $hb-tb-bottom-breakpoint: 480px;
 $hb-tb-top-breakpoint: 768px;
 //Laptops
+$desktop-btm-bkp: 1080;
+$desktop-top-bkp: 1440;
 $hb-lp-bottom-breakpoint: 780px;
 $hb-lp-top-breakpoint: 1022px;
-//Desktops
-$hb-dt-sm-breakpoint: 1024px;
-$hb-dt-md-breakpoint: 1200px;
-$hb-dt-lg-breakpoint: 1920px;
