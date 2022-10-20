@@ -1,64 +1,54 @@
 /* --global header styling-- */
 .header {
     width: 100%;
+    height: 160px;
     background-color: $hb-light-green;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 12px;
 
     &-title {
         width: 100%;
-        max-width: 460px;
+        max-width: 320px;
+        height: 40px;
         text-align: center;
     }
 }
 
-// @media screen and (min-width: $hb-tb-bottom-breakpoint) and (max-width: $hb-tb-top-breakpoint) {
-//     .header {
-//         display: flex;
-//         flex-flow: row wrap;
-//         justify-content: space-between;
-//         align-items: center;
+/* --Mobile Responsive-- */
+@media screen and (min-width:640px) and (max-width:$mobile-top-bkp) {
+    .header {
+        justify-content: space-around;
+    }
+}
 
-//         & a {
-//             width: 44%;
-//             max-width: 320px;
-//         }
+/* --Tablet Responsive-- */
+@media screen and (min-width:$tablet-btm-bkp) and (max-width:$tablet-top-bkp) {
+    .header {
+        height: 120px;
+        position: sticky;
+        top: 0;
+        justify-content: space-around;
 
-//         &-title {
-//             width: 55%;
-//         }
-//     }
-// }
+        &-logo,
+        &-title {
+            width: 250px;
+        }
+    }
+}
 
-// @media screen and (min-width:$hb-lp-bottom-breakpoint) and (max-width:$hb-lp-top-breakpoint) {
-//     .header {
-//         position: sticky;
-//         top: 0;
-//         display: flex;
-//         flex-flow: row wrap;
-//         justify-content: flex-start;
-//         align-items: center;
-//         gap: 5px;
+/* --Desktop Responsive-- */
+@media screen and (min-width:$desktop-btm-bkp) and (max-width:$desktop-top-bkp) {
+    .header {
+        height: 100px;
+        justify-content: space-between;
 
-//         & a {
-//             width: 24%;
-//             max-width: 240px;
-//         }
-
-//         &-title {
-//             width: 24%;
-//             max-width: 240px;
-//         }
-//     }
-// }
-
-// @media screen and (min-width:$hb-dt-sm-breakpoint) {
-//     .header {
-//         position: sticky;
-//         top: 0;
-//         display: flex;
-//         justify-content: space-evenly;
-
-//         &-title {
-//             width: 50%;
-//         }
-//     }
-// }
+        &-logo,
+        &-title {
+            width: 240px;
+        }
+    }
+}
