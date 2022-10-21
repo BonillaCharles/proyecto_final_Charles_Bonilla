@@ -1,13 +1,10 @@
 /* --global footer styling-- */
 .footer {
-    background-color: $hb-mid-gray;
     width: 100%;
     display: flex;
     flex-flow: column nowrap;
-
-    &-text {
-        padding: 6px;
-    }
+    align-items: center;
+    background-color: $hb-mid-gray;
 
     & .container {
         text-align: justify;
@@ -19,16 +16,25 @@
         }
     }
 
+    &-text {
+        padding: 6px;
+    }
+}
+
+.legal,
+.social-media {
+    width: 100%;
 }
 
 .footer-legal,
 .footer-social_media {
-    width: 100%;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-around;
     text-align: center;
     padding: 4px;
+    min-height: 30px;
+    max-height: 45px;
 
     & a {
         color: $hb-dark-gray;
@@ -36,42 +42,50 @@
     }
 }
 
-// @media screen and (min-width: 600px) and (max-width: $hb-tb-top-breakpoint) {
-//     .footer {
-//         & a {
-//             width: 44%;
-//             max-width: 320px;
-//         }
+@media screen and (min-width:600px) and (max-width:$mobile-top-bkp) {
+    .footer {
+        & a {
+            align-self: flex-start;
+        }
+    }
+}
 
-//         & .container {
-//             display: flex;
-//             flex-flow: row nowrap;
-//             justify-content: space-evenly;
-//         }
+@media screen and (min-width:$tablet-btm-bkp) and (max-width:$tablet-top-bkp) {
+    .footer {
+        & a {
+            align-self: flex-start;
+        }
 
-//         &-text {
-//             width: 33%;
-//         }
-//     }
-// }
+        & .container {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: flex-start;
+            text-align: start;
+        }
 
-// @media screen and (min-width:$hb-lp-bottom-breakpoint) and (max-width:$hb-dt-md-breakpoint) {
-//     .footer {
+        &-text {
+            width: 33%;
+            height: 100%;
+            min-height: 160px;
+        }
+    }
+}
 
-//         & a {
-//             width: 35%;
-//             max-width: 280px;
-//         }
+@media screen and (min-width:$desktop-btm-bkp) {
+    .footer {
+        flex-flow: row wrap;
 
-//         & .container {
-//             display: flex;
-//             flex-flow: row nowrap;
-//             justify-content: space-between;
-//         }
+        & .container {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: flex-start;
+            text-align: start;
+        }
 
-//         &-text {
-//             width: 33%;
-//             max-width: 280px;
-//         }
-//     }
-// }
+        &-text {
+            width: 33%;
+            height: 100%;
+            min-height: 160px;
+        }
+    }
+}

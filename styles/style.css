@@ -176,6 +176,8 @@ footer {
 @media screen and (min-width: 1024px) and (max-width: 1980px) {
   .header {
     height: 100px;
+    position: sticky;
+    top: 0;
     justify-content: space-between;
   }
   .header-logo, .header-title {
@@ -250,13 +252,11 @@ footer {
 
 /* --global footer styling-- */
 .footer {
-  background-color: rgb(199, 199, 199);
   width: 100%;
   display: flex;
   flex-flow: column nowrap;
-}
-.footer-text {
-  padding: 6px;
+  align-items: center;
+  background-color: rgb(199, 199, 199);
 }
 .footer .container {
   text-align: justify;
@@ -266,15 +266,24 @@ footer {
   color: rgb(103, 188, 42);
   font-weight: 800;
 }
+.footer-text {
+  padding: 6px;
+}
+
+.legal,
+.social-media {
+  width: 100%;
+}
 
 .footer-legal,
 .footer-social_media {
-  width: 100%;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-around;
   text-align: center;
   padding: 4px;
+  min-height: 30px;
+  max-height: 45px;
 }
 .footer-legal a,
 .footer-social_media a {
@@ -282,6 +291,43 @@ footer {
   font-weight: 600;
 }
 
+@media screen and (min-width: 600px) and (max-width: 766px) {
+  .footer a {
+    align-self: flex-start;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1022px) {
+  .footer a {
+    align-self: flex-start;
+  }
+  .footer .container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    text-align: start;
+  }
+  .footer-text {
+    width: 33%;
+    height: 100%;
+    min-height: 160px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .footer {
+    flex-flow: row wrap;
+  }
+  .footer .container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    text-align: start;
+  }
+  .footer-text {
+    width: 33%;
+    height: 100%;
+    min-height: 160px;
+  }
+}
 /* --index.html styling-- */
 .hero {
   background-image: url("../images/hb_nutrition_wp_black_1547x1080.jpg");

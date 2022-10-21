@@ -44,6 +44,8 @@
 @media screen and (min-width:$desktop-btm-bkp) and (max-width:$desktop-top-bkp) {
     .header {
         height: 100px;
+        position: sticky;
+        top: 0;
         justify-content: space-between;
 
         &-logo,
