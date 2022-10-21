@@ -1,5 +1,6 @@
 /* --index.html styling-- */
 .hero {
+    height: 350px;
     background-image: url("../images/hb_nutrition_wp_black_1547x1080.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -7,6 +8,10 @@
     text-align: center;
     text-transform: uppercase;
     color: #fff;
+
+    & .container {
+        width: 100%;
+    }
 
     &-text {
         text-align: justify;
@@ -18,36 +23,41 @@
 }
 
 .testimonials {
-    display: flex;
-    flex-flow: column nowrap;
-    padding: 6px;
+    width: 100%;
 
+    & .container {
+        display: flex;
+        flex-flow: column nowrap;
+        padding: 6px;
+
+    }
 }
 
-// @media screen and (min-width: $hb-tb-bottom-breakpoint) and (max-width: $hb-tb-top-breakpoint) {
+@media screen and (min-width:640px) and (max-width:$desktop-top-bkp) {
+    .hero {
+        display: flex;
+        align-items: center;
 
-//     .hero {
-//         width: 100%;
-//         display: flex;
-//         flex-flow: row nowrap;
+        & .container {
+            width: 60%;
+            font-size: 1.25rem;
+        }
 
-//         & .container {
-//             width: 50%;
-//             display: block;
-//             margin: auto;
-//         }
-//     }
+        &-title,
+        &-text {
+            padding: 12px;
+        }
+    }
 
-//     .testimonials .container {
-//         display: flex;
-//         flex-flow: row nowrap;
-//         overflow-x: auto;
-//         gap: 10px;
-//         padding: 6px;
+    .testimonials {
+        & .container {
+            flex-flow: row nowrap;
+            align-items: flex-start;
+            overflow-x: auto;
 
-//         & .card {
-//             min-width: 420px;
-//             min-height: 180px;
-//         }
-//     }
-// }
+            & .card {
+                min-height: 240px;
+            }
+        }
+    }
+}

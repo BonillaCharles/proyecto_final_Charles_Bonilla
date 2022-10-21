@@ -330,6 +330,7 @@ footer {
 }
 /* --index.html styling-- */
 .hero {
+  height: 350px;
   background-image: url("../images/hb_nutrition_wp_black_1547x1080.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -337,6 +338,9 @@ footer {
   text-align: center;
   text-transform: uppercase;
   color: #fff;
+}
+.hero .container {
+  width: 100%;
 }
 .hero-text {
   text-align: justify;
@@ -347,11 +351,35 @@ footer {
 }
 
 .testimonials {
+  width: 100%;
+}
+.testimonials .container {
   display: flex;
   flex-flow: column nowrap;
   padding: 6px;
 }
 
+@media screen and (min-width: 640px) and (max-width: 1980px) {
+  .hero {
+    display: flex;
+    align-items: center;
+  }
+  .hero .container {
+    width: 60%;
+    font-size: 1.25rem;
+  }
+  .hero-title, .hero-text {
+    padding: 12px;
+  }
+  .testimonials .container {
+    flex-flow: row nowrap;
+    align-items: flex-start;
+    overflow-x: auto;
+  }
+  .testimonials .container .card {
+    min-height: 240px;
+  }
+}
 /* --products.html styling-- */
 .products,
 .membership {
