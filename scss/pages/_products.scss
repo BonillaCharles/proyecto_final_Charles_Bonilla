@@ -3,7 +3,7 @@
 .membership {
     background-color: $hb-light-gray;
     border-radius: 10px;
-    margin: 24px auto;
+    margin-bottom: 12px;
 
     &-title {
         text-transform: uppercase;
@@ -32,6 +32,7 @@
 }
 
 .preparation {
+    display: none;
     border-radius: 10px;
 
     &-title {
@@ -50,5 +51,54 @@
             list-style-type: disc;
             padding: 3px;
         }
+    }
+}
+
+@media screen and (min-width:640px) and (max-width:$desktop-top-bkp) {
+
+    .products,
+    .membership {
+        width: 100%;
+
+        & .container {
+            flex-flow: row nowrap;
+            overflow-x: auto;
+
+            & .card {
+                min-width: 350px;
+                min-height: 580px;
+            }
+        }
+
+        &-disclosure {
+            text-align: center;
+        }
+    }
+
+    .membership {
+        & .container {
+            justify-content: center;
+        }
+    }
+}
+
+@media (min-width:$desktop-btm-bkp) and (max-width:$desktop-top-bkp) {
+    .preparation {
+        display: contents;
+
+        & .container {
+            flex-flow: row nowrap;
+            justify-content: center;
+            margin-bottom: 12px;
+
+            & .card {
+                max-width: 80%;
+            }
+        }
+    }
+
+    .ingredients {
+        list-style-type: disc;
+        list-style-position: inside;
     }
 }

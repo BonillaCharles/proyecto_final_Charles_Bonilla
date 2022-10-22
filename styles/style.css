@@ -61,8 +61,11 @@ footer {
 .card-img {
   display: block;
   width: 100%;
+  max-width: 320px;
+  max-height: 260px;
   border-radius: 16px;
   padding: 6px;
+  margin: 0 auto;
 }
 .card-text, .card-list_item {
   text-align: justify;
@@ -385,7 +388,7 @@ footer {
 .membership {
   background-color: rgb(221, 221, 221);
   border-radius: 10px;
-  margin: 24px auto;
+  margin-bottom: 12px;
 }
 .products-title,
 .membership-title {
@@ -414,6 +417,7 @@ footer {
 }
 
 .preparation {
+  display: none;
   border-radius: 10px;
 }
 .preparation-title {
@@ -431,6 +435,46 @@ footer {
   padding: 3px;
 }
 
+@media screen and (min-width: 640px) and (max-width: 1980px) {
+  .products,
+.membership {
+    width: 100%;
+  }
+  .products .container,
+.membership .container {
+    flex-flow: row nowrap;
+    overflow-x: auto;
+  }
+  .products .container .card,
+.membership .container .card {
+    min-width: 350px;
+    min-height: 580px;
+  }
+  .products-disclosure,
+.membership-disclosure {
+    text-align: center;
+  }
+  .membership .container {
+    justify-content: center;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1980px) {
+  .preparation {
+    display: contents;
+  }
+  .preparation .container {
+    flex-flow: row nowrap;
+    justify-content: center;
+    margin-bottom: 12px;
+  }
+  .preparation .container .card {
+    max-width: 80%;
+  }
+  .ingredients {
+    list-style-type: disc;
+    list-style-position: inside;
+  }
+}
 /* --faq.html styling-- */
 .questions {
   margin-bottom: 12px;

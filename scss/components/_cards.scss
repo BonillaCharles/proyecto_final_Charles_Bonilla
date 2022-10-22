@@ -16,8 +16,11 @@
     &-img {
         display: block;
         width: 100%;
+        max-width: 320px;
+        max-height: 260px;
         border-radius: 16px;
         padding: 6px;
+        margin: 0 auto;
     }
 
     &-text,
