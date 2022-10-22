@@ -1,5 +1,7 @@
 /* --location.html styling-- */
 .location {
+    margin-bottom: 12px;
+
     & .location-title {
         text-align: center;
         text-transform: uppercase;
@@ -11,8 +13,10 @@
         gap: 2px;
 
         & .address {
+            height: 200px;
             display: flex;
             flex-flow: column nowrap;
+            justify-content: space-evenly;
             margin-bottom: 12px;
         }
     }
@@ -20,5 +24,30 @@
     & .map {
         width: 100%;
         box-shadow: 5px 5px 18px 0 #071f4d;
+    }
+}
+
+@media screen and (min-width:640px) and (max-width:$desktop-top-bkp) {
+    .location {
+        width: 100%;
+
+        &-title {
+            padding: 12px;
+        }
+
+        & .container {
+            flex-flow: row nowrap;
+            justify-content: space-between;
+            align-items: center;
+
+            & .address {
+                width: 29%;
+                margin: 0;
+            }
+        }
+
+        & .map {
+            width: 69%;
+        }
     }
 }

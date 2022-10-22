@@ -47,3 +47,37 @@
         padding: 12px;
     }
 }
+
+@media screen and (min-width:640px) and (max-width:$desktop-top-bkp) {
+    .questions {
+        width: 100%;
+
+        &-title {
+            padding: 12px;
+        }
+
+        & .container {
+            flex-flow: row nowrap;
+            overflow-x: auto;
+
+            & .card {
+                min-width: 320px;
+                min-height: 420px;
+            }
+        }
+    }
+
+    .question-form {
+        width: 100%;
+        background-color: $hb-light-green;
+        border-radius: 10px;
+
+        & .form-text {
+            text-align: center;
+        }
+    }
+
+    .form {
+        margin: 0 auto;
+    }
+}

@@ -515,7 +515,37 @@ footer {
   padding: 12px;
 }
 
+@media screen and (min-width: 640px) and (max-width: 1980px) {
+  .questions {
+    width: 100%;
+  }
+  .questions-title {
+    padding: 12px;
+  }
+  .questions .container {
+    flex-flow: row nowrap;
+    overflow-x: auto;
+  }
+  .questions .container .card {
+    min-width: 320px;
+    min-height: 420px;
+  }
+  .question-form {
+    width: 100%;
+    background-color: rgb(122, 193, 67);
+    border-radius: 10px;
+  }
+  .question-form .form-text {
+    text-align: center;
+  }
+  .form {
+    margin: 0 auto;
+  }
+}
 /* --location.html styling-- */
+.location {
+  margin-bottom: 12px;
+}
 .location .location-title {
   text-align: center;
   text-transform: uppercase;
@@ -526,8 +556,10 @@ footer {
   gap: 2px;
 }
 .location .container .address {
+  height: 200px;
   display: flex;
   flex-flow: column nowrap;
+  justify-content: space-evenly;
   margin-bottom: 12px;
 }
 .location .map {
@@ -535,6 +567,26 @@ footer {
   box-shadow: 5px 5px 18px 0 #071f4d;
 }
 
+@media screen and (min-width: 640px) and (max-width: 1980px) {
+  .location {
+    width: 100%;
+  }
+  .location-title {
+    padding: 12px;
+  }
+  .location .container {
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .location .container .address {
+    width: 29%;
+    margin: 0;
+  }
+  .location .map {
+    width: 69%;
+  }
+}
 /* --about.html styling-- */
 .about-title {
   text-align: center;
