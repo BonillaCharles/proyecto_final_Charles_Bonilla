@@ -1,25 +1,26 @@
-//Herbalife Nutrition Color Palette Variables
+//*Herbalife Nutrition Color Palette Variables
 $hb-light-green: rgb(122, 193, 67); //#7ac143
 $hb-main-green: rgb(103, 188, 42); //#67bc2a
 $hb-light-gray: rgb(221, 221, 221); //#dddddd
 $hb-mid-gray: rgb(199, 199, 199); //#c7c7c7
 $hb-dark-gray: rgb(77, 77, 77); //#4d4d4d
 
-//Herbalife Nutrition Typography Variable
+//*Herbalife Nutrition Typography Variable
+//* 1rem = 16px
 $hb-typography: Helvetica Neue, Helvetica, Arial, sans-serif;
 
-//Other references
+//*Other references
 $hb-hero-bd-img: rgb(255, 255, 0); //#ffff00
 
-//Herbalife Nutrition Breakpoints
-//Mobile
+//*Herbalife Nutrition Breakpoints
+//*Mobile
 $mobile-btm-bkp: 360px;
 $mobile-top-bkp: 766px;
 
-//Tablets
+//*Tablets
 $tablet-btm-bkp: 768px;
 $tablet-top-bkp: 1022px;
 
-//Laptops
+//*Laptops
 $desktop-btm-bkp: 1024px;
 $desktop-top-bkp: 1980px;
