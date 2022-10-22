@@ -29,8 +29,6 @@
 @media screen and (min-width:$tablet-btm-bkp) and (max-width:$tablet-top-bkp) {
     .header {
         height: 120px;
-        position: sticky;
-        top: 0;
         justify-content: space-around;
 
         &-logo,
