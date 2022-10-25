@@ -127,6 +127,27 @@ footer {
   z-index: -1;
 }
 
+.card-btn {
+  width: 96px;
+  height: 36px;
+  position: relative;
+  align-self: center;
+  border: none;
+  outline: none;
+  background: rgb(103, 188, 42);
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  border-radius: 12px;
+  cursor: pointer;
+  margin: 12px;
+  z-index: 0;
+}
+.card-btn:active {
+  font-weight: 800;
+}
+
 @keyframes glowing {
   0% {
     background-position: 0 0;
@@ -374,6 +395,7 @@ footer {
   }
   .testimonials .container {
     flex-flow: row nowrap;
+    justify-content: space-evenly;
     align-items: flex-start;
     overflow-x: auto;
   }
@@ -399,6 +421,11 @@ footer {
   display: flex;
   flex-flow: column nowrap;
   gap: 5px;
+}
+.products .container .card,
+.membership .container .card {
+  display: flex;
+  flex-direction: column;
 }
 .products .container .card-list_item,
 .membership .container .card-list_item {
@@ -433,7 +460,7 @@ footer {
   padding: 3px;
 }
 
-@media screen and (min-width: 640px) and (max-width: 1980px) {
+@media screen and (min-width: 640px) and (max-width: 1022px) {
   .products,
 .membership {
     width: 100%;
@@ -441,22 +468,41 @@ footer {
   .products .container,
 .membership .container {
     flex-flow: row nowrap;
-    overflow-x: auto;
+    overflow: auto;
   }
-  .products .container .card,
-.membership .container .card {
-    min-width: 350px;
-    min-height: 580px;
-  }
-  .products-disclosure,
-.membership-disclosure {
-    text-align: center;
+  .products .container .card {
+    min-width: 380px;
+    min-height: 640px;
   }
   .membership .container {
-    justify-content: center;
+    justify-content: space-evenly;
+  }
+  .membership .container .card {
+    min-width: 350px;
+    min-height: 500px;
   }
 }
 @media (min-width: 1024px) and (max-width: 1980px) {
+  .products,
+.membership {
+    width: 100%;
+  }
+  .products .container,
+.membership .container {
+    flex-flow: row nowrap;
+    overflow: auto;
+  }
+  .products .container .card {
+    min-width: 420px;
+    min-height: 640px;
+  }
+  .membership .container {
+    justify-content: space-evenly;
+  }
+  .membership .container .card {
+    min-width: 350px;
+    min-height: 500px;
+  }
   .preparation {
     display: contents;
   }
@@ -471,6 +517,17 @@ footer {
   .ingredients {
     list-style-type: disc;
     list-style-position: inside;
+  }
+}
+@media (min-width: 1440px) and (max-width: 1980px) {
+  .products .container {
+    justify-content: space-evenly;
+  }
+  .preparation {
+    display: contents;
+  }
+  .preparation .container .card {
+    max-width: 50%;
   }
 }
 /* --faq.html styling-- */
@@ -542,6 +599,11 @@ footer {
     margin: 0 auto;
   }
 }
+@media (min-width: 1440px) and (max-width: 1980px) {
+  .questions .container {
+    justify-content: space-evenly;
+  }
+}
 /* --location.html styling-- */
 .location {
   margin-bottom: 12px;
@@ -557,6 +619,10 @@ footer {
 }
 .location .container .address {
   height: 200px;
+  background-image: url("../images/hb_mobile_address.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
   display: flex;
   flex-flow: column nowrap;
   justify-content: space-evenly;
@@ -576,29 +642,55 @@ footer {
   }
   .location .container {
     flex-flow: row nowrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
   }
   .location .container .address {
     width: 29%;
+    background-image: url("../images/hb_current_location.svg");
+    border: 3px solid rgb(103, 188, 42);
     margin: 0;
   }
   .location .map {
     width: 69%;
+    max-width: 1024px;
   }
 }
 /* --about.html styling-- */
+.about {
+  width: 100%;
+}
 .about-title {
   text-align: center;
   text-transform: uppercase;
 }
 .about .container {
+  width: 100%;
   display: flex;
   flex-flow: column nowrap;
   gap: 2px;
 }
 .about .container .card {
   width: 100%;
+}
+
+@media screen and (min-width: 640px) and (max-width: 1980px) {
+  .about .container {
+    flex-flow: row nowrap;
+    overflow-x: auto;
+    gap: 5px;
+  }
+  .about .container .card {
+    min-width: 320px;
+    max-width: 360px;
+    height: 480px;
+    overflow: hidden visible;
+  }
+}
+@media (min-width: 1024px) {
+  .about .container {
+    justify-content: space-evenly;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

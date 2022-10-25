@@ -16,6 +16,11 @@
         flex-flow: column nowrap;
         gap: 5px;
 
+        & .card {
+            display: flex;
+            flex-direction: column;
+        }
+
         & .card-list_item {
             list-style-type: disc;
             list-style-position: inside;
@@ -54,7 +59,7 @@
     }
 }
 
-@media screen and (min-width:640px) and (max-width:$desktop-top-bkp) {
+@media screen and (min-width:640px) and (max-width:$tablet-top-bkp) {
 
     .products,
     .membership {
@@ -62,27 +67,64 @@
 
         & .container {
             flex-flow: row nowrap;
-            overflow-x: auto;
-
-            & .card {
-                min-width: 350px;
-                min-height: 580px;
-            }
+            overflow: auto;
         }
+    }
 
-        &-disclosure {
-            text-align: center;
+    .products {
+        & .container {
+            & .card {
+                min-width: 380px;
+                min-height: 640px;
+            }
         }
     }
 
     .membership {
         & .container {
-            justify-content: center;
+            justify-content: space-evenly;
+
+            & .card {
+                min-width: 350px;
+                min-height: 500px;
+            }
         }
     }
+
 }
 
 @media (min-width:$desktop-btm-bkp) and (max-width:$desktop-top-bkp) {
+
+    .products,
+    .membership {
+        width: 100%;
+
+        & .container {
+            flex-flow: row nowrap;
+            overflow: auto;
+        }
+    }
+
+    .products {
+        & .container {
+            & .card {
+                min-width: 420px;
+                min-height: 640px;
+            }
+        }
+    }
+
+    .membership {
+        & .container {
+            justify-content: space-evenly;
+
+            & .card {
+                min-width: 350px;
+                min-height: 500px;
+            }
+        }
+    }
+
     .preparation {
         display: contents;
 
@@ -100,5 +142,22 @@
     .ingredients {
         list-style-type: disc;
         list-style-position: inside;
+    }
+}
+
+@media (min-width:$desktop-mid-bkp) and (max-width:$desktop-top-bkp) {
+    .products {
+        & .container {
+            justify-content: space-evenly;
+        }
+    }
+
+    .preparation {
+        display: contents;
+        & .container {
+            & .card {
+                max-width: 50%;
+            }
+        }
     }
 }

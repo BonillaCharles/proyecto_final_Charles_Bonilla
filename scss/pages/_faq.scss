@@ -81,3 +81,11 @@
         margin: 0 auto;
     }
 }
+
+@media (min-width:$desktop-mid-bkp) and (max-width:$desktop-top-bkp) {
+    .questions {
+        & .container {
+            justify-content: space-evenly;
+        }
+    }
+}

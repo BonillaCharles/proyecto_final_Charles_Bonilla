@@ -1,17 +1,46 @@
 /* --about.html styling-- */
 .about {
+    width: 100%;
+
     &-title {
         text-align: center;
         text-transform: uppercase;
     }
 
     & .container {
+        width: 100%;
         display: flex;
         flex-flow: column nowrap;
         gap: 2px;
 
         & .card {
             width: 100%;
+        }
+    }
+}
+
+@media screen and (min-width:640px) and (max-width:$desktop-top-bkp) {
+    .about {
+
+        & .container {
+            flex-flow: row nowrap;
+            overflow-x: auto;
+            gap: 5px;
+
+            & .card {
+                min-width: 320px;
+                max-width: 360px;
+                height: 480px;
+                overflow: hidden visible;
+            }
+        }
+    }
+}
+
+@media (min-width:$desktop-btm-bkp) {
+    .about {
+        & .container {
+            justify-content: space-evenly;
         }
     }
 }
