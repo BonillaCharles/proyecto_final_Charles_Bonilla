@@ -6,6 +6,10 @@
     align-items: center;
     background-color: $hb-mid-gray;
 
+    & a {
+        align-self: flex-start;
+    }
+
     & .container {
         text-align: justify;
         border-bottom: 6px solid #000;
@@ -37,24 +41,18 @@
     max-height: 45px;
 
     & a {
-        color: $hb-dark-gray;
+        cursor: pointer;
         font-weight: 600;
-    }
-}
 
-@media screen and (min-width:600px) and (max-width:$mobile-top-bkp) {
-    .footer {
-        & a {
-            align-self: flex-start;
+        &:hover {
+            font-size: 1.5rem;
         }
     }
+
 }
 
 @media screen and (min-width:$tablet-btm-bkp) and (max-width:$tablet-top-bkp) {
     .footer {
-        & a {
-            align-self: flex-start;
-        }
 
         & .container {
             display: flex;
@@ -69,7 +67,39 @@
             min-height: 160px;
         }
     }
+
+    .footer-legal a {
+        color: $hb-dark-gray;
+
+        &:hover {
+            border-radius: 12px;
+            padding: 5px;
+        }
+    }
+
+    .footer-social_media li {
+
+        &:nth-child(1) {
+            & a {
+                color: blue;
+            }
+        }
+
+        &:nth-child(2) {
+            & a {
+                color: purple;
+            }
+        }
+
+        &:nth-child(3) {
+            & a {
+                color: darkred;
+            }
+        }
+    }
+
 }
+
 
 @media screen and (min-width:$desktop-btm-bkp) {
     .footer {
@@ -86,6 +116,38 @@
             width: 33%;
             height: 100%;
             min-height: 160px;
+        }
+    }
+
+    .footer-legal a {
+        color: $hb-main-green;
+
+        &:hover {
+            color: #fff;
+            background-color: $hb-light-green;
+            border-radius: 12px;
+            padding: 5px;
+        }
+    }
+
+    .footer-social_media li {
+
+        &:nth-child(1) {
+            & a {
+                color: blue;
+            }
+        }
+
+        &:nth-child(2) {
+            & a {
+                color: purple;
+            }
+        }
+
+        &:nth-child(3) {
+            & a {
+                color: darkred;
+            }
         }
     }
 }

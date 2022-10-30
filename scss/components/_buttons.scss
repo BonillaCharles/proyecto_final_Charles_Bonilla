@@ -79,6 +79,14 @@
     &:active {
         font-weight: 800;
     }
+
+    &:hover {
+        /* transition: [properties]|[duration]|[timing-function|[delay]; */
+        transition: all 1s linear 0;
+        transform: scale(1.3);
+        border: 2px solid $hb-dark-gray;
+        color: #000;
+    }
 }
 
 @keyframes glowing {

@@ -19,6 +19,7 @@
         & .card {
             display: flex;
             flex-direction: column;
+            justify-content: space-between;
         }
 
         & .card-list_item {
@@ -154,6 +155,7 @@
 
     .preparation {
         display: contents;
+
         & .container {
             & .card {
                 max-width: 50%;
